@@ -7,7 +7,7 @@ const Jobs = ({ jobs, changeJob, value }) => {
         return (
           <div className="job-details" key={index}>
             <button
-              className={`job-btn ${index === value} && active-btn`}
+              className={`job-btn ${index === value && "active-btn"}`}
               style={{ marginRight: ".3rem" }}
               onClick={() => {
                 changeJob(index);
