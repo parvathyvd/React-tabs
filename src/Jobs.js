@@ -1,13 +1,13 @@
 import React from "react";
 
-const Jobs = ({ jobs, changeJob }) => {
+const Jobs = ({ jobs, changeJob, value }) => {
   return (
     <div className="btn-container">
       {jobs.map((job, index) => {
         return (
           <div className="job-details" key={index}>
             <button
-              className="btn"
+              className={`job-btn ${index === value} && active-btn`}
               style={{ marginRight: ".3rem" }}
               onClick={() => {
                 changeJob(index);

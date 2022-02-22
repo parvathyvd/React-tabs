@@ -38,7 +38,7 @@ function App() {
         <h2>experience</h2>
         <div className="underline"></div>
       </div>
-      <Jobs jobs={allData} changeJob={changeJobDetails} />
+      <Jobs jobs={allData} changeJob={changeJobDetails} value={value} />
       <article className="job-info">
         <h3>{title}</h3>
         <h4>{company}</h4>
